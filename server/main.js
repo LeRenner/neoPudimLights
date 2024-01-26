@@ -7,6 +7,9 @@ const port = 3000
 
 // get token from /secret/token.txt
 const token = fs.readFileSync('/secret/token', 'utf8');
+token = token.replace(/\n$/, "");
+
+console.log("Got token: " + token);
 
 app.get('/1/on', (req, res) => {
 	console.log("/1/on");
