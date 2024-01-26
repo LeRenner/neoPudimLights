@@ -6,7 +6,7 @@ const app = express()
 const port = 3000
 
 // get token from /secret/token.txt
-const token = fs.readFileSync('/secret/token', 'utf8');
+let token = fs.readFileSync('/secret/token', 'utf8');
 token = token.replace(/\n$/, "");
 
 console.log("Got token: " + token);
