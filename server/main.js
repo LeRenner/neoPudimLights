@@ -21,7 +21,7 @@ app.get('/1/on', (req, res) => {
 	};
 	
 	const data = {
-		entity_id: 'switch.relay_1'
+		entity_id: 'switch.esphome_3223_relay'
 	};
 	
 	axios.post(url, data, { headers })
@@ -45,7 +45,7 @@ app.get('/1/off', (req, res) => {
 	};
 	
 	const data = {
-		entity_id: 'switch.relay_1'
+		entity_id: 'switch.esphome_3223_relay'
 	};
 	
 	axios.post(url, data, { headers })
